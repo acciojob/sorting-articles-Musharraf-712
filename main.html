@@ -61,7 +61,7 @@
     const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
     // Add to list
-    document.querySlector('#band').innerHTML = sortedBands
+    document.querySelector('#band').innerHTML = sortedBands
       .map(band => `<li>${band}</li>`)
       .join('');
   </script>
