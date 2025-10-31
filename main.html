@@ -33,7 +33,7 @@
 </head>
 <body>
   <h1>Alphabetical Article Sorter</h1>
-  <ul id="band"></ul>
+  <ul id="bands"></ul>
 
   <script>
     const bands = [
@@ -61,7 +61,7 @@
     const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
     // Add to list
-    document.querySelector('#band').innerHTML = sortedBands
+    document.querySelector('#bands').innerHTML = sortedBands
       .map(band => `<li>${band}</li>`)
       .join('');
   </script>
